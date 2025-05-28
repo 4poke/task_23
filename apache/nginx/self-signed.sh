@@ -1,0 +1,1 @@
+openssl req -x509 -trustout -newkey rsa:4096 -keyout /home/ubuntu/nginx/key.pem -out /home/ubuntu/nginx/cert.pem -sha256 -days 365 -nodes -subj "/C=BY/ST= /L=Gomel/O=POPismenny LTD/OU= /CN=nginx.headstar.freeddns.org www.nginx.headstar.freeddns.org"
