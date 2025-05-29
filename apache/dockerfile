@@ -3,4 +3,4 @@ WORKDIR /etc/apache2/sites-available
 COPY ./nginx/apache.conf .
 COPY ./nginx/ /home/ubuntu/nginx
 EXPOSE 8087:443
-RUN a2enmod ssl && apache2ctl -D FOREGROUND
+RUN a2enmod ssl
