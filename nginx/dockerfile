@@ -1,5 +1,5 @@
 FROM hologolo/popismenny:nginxv2
-COPY ./nginx/ /home/ubuntu/nginx
+COPY ./nginx/ /home/ubuntu/nginx/
 WORKDIR /etc/nginx
 COPY ./nginx/nginx.conf .
 EXPOSE 80 443 8081-8085
