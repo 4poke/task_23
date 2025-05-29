@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  apache:
+    image: hologolo/task23_apache:latest
+    ports:
+      - "8087:443"
+
+  nginx:
+    image: hologolo/task23_ninx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8081-8085:8081-8085"
+    depends_on:
+      - apache
