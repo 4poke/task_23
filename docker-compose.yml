@@ -7,7 +7,7 @@ services:
       - "8087:443"
 
   nginx:
-    image: hologolo/task23_ninx:latest
+    image: hologolo/task23_nginx:latest
     ports:
       - "80:80"
       - "443:443"
