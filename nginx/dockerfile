@@ -2,4 +2,4 @@ FROM hologolo/popismenny:nginxv2
 COPY ./nginx/ /home/ubuntu/
 WORKDIR /etc/nginx
 COPY ./nginx/nginx.conf .
-EXPOSE 80:80 443:443 8080:8085
+EXPOSE 80 443 8081-8085
