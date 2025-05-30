@@ -1,4 +1,0 @@
-FROM hologolo/popismenny:nginxv1
-WORKDIR /etc/nginx
-COPY .nginx/nginx.conf .
-COPY /home/headstar/nginx/ /home/ubuntu/nginx
