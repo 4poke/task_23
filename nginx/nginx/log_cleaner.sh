@@ -26,12 +26,12 @@ mkdir -p $LOG_DIR
 fi
 
 while true; do
-    Грепает ошибки по коду в access логе
+    #Грепает ошибки по коду в access логе
     grep "200" $log_access >> $log_200
     grep "500" $log_access >> $log_500
     grep "400" $log_access >> $log_400
     echo "All access logs are greped"
-    грепает ошибки по коду в upstream логе
+    #грепает ошибки по коду в upstream логе
     if grep  "200" $log_upstream; then
         grep "200" $log_upstream >> $upstream_log200
     fi
