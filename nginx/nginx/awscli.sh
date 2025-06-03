@@ -8,11 +8,11 @@ install_aws_windows() {
 
 # Функция для установки AWS CLI на macOS
 install_aws_macos() {
-    echo "Скачивание AWS CLI..."
+    echo "======= Скачивание AWS CLI ======="
     curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "$HOME/AWSCLIV2.pkg"
-    echo "Установка AWS CLI..."
+    echo "======= Установка AWS CLI ======="
     sudo installer -pkg "$HOME/AWSCLIV2.pkg" -target /
-    echo "Удаление установочного файла..."
+    echo "======= Удаление установочного файла ======="
     rm "$HOME/AWSCLIV2.pkg"
 }
 
